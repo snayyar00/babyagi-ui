@@ -12,7 +12,7 @@ export const getUserApiKey = () => {
   }
 
   const settings = JSON.parse(item) as UserSettings;
-  const openAIApiKey = settings?.openAIApiKey ?? undefined;
+  const openAIApiKey =  process.env.OPENAI_API_KEY;
 
   return openAIApiKey;
 };

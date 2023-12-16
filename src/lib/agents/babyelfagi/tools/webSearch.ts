@@ -26,7 +26,7 @@ export const webSearch = async (query: string) => {
       const response = await fetch(
         'https://www.googleapis.com/customsearch/v1',
         {
-          method: 'GET',
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },

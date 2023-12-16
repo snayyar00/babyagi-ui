@@ -41,13 +41,13 @@ export const BABYBEEAGI_ITERATIONS = [
 export const AGENT = [
   {
     id: 'babydeeragi',
-    name: 'BabyDeerAGI',
+    name: 'babyGPT',
     icon: '🦌',
     badge: 'STABLE',
   },
   {
     id: 'babyelfagi',
-    name: 'BabyElfAGI',
+    name: 'DilmanGPT',
     icon: '🧝',
     badge: 'BETA',
   },

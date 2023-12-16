@@ -50,11 +50,12 @@ async function getEmbedding(
   try {
     const embedding = new OpenAIEmbeddings({
       modelName,
-      openAIApiKey: userApiKey,
+      openAIApiKey: process.env.OPENAI_API_KEY ,
     });
     return await embedding.embedQuery(text);
   } catch (e) {
-    throw new Error(`error: ${e}`);
+    console.log('gfdjfgdfgdjfgdfgdgfjjgdjgfdgjf',process.env.OPENAI_API_KEY)
+    throw new Error(`hello ${e}`);
   }
 }
 

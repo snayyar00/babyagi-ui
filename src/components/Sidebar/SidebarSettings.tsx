@@ -179,44 +179,12 @@ export const SidebarSettings: FC = () => {
               <hr className="dark:border-neutral-700" />
               <form className="mt-6 space-y-5">
                 <fieldset className="flex flex-col items-start space-y-1">
-                  <label
-                    htmlFor="openAIApiKey"
-                    className="text-xs font-medium text-gray-700 dark:text-gray-400"
-                  >
-                    {translate('OPENAI_API_KEY')}
-                  </label>
+                 
                   <div className="inline-flex w-full items-center justify-center space-x-1">
-                    <input
-                      id="openAIApiKey"
-                      type="text"
-                      placeholder={translate('OPENAI_API_KEY')}
-                      className={clsx(
-                        'block w-full rounded p-2',
-                        'text-sm text-gray-700 placeholder:text-gray-500 dark:text-gray-400 dark:placeholder:text-gray-600',
-                        'border border-gray-200 focus-visible:border-transparent dark:border-neutral-700 dark:bg-neutral-800',
-                        'focus:outline-none focus-visible:ring focus-visible:ring-neutral-500 focus-visible:ring-opacity-10',
-                      )}
-                      value={settings?.openAIApiKey ?? ''}
-                      onChange={handleValueChange}
-                    />
                     <DialogPrimitive.DialogClose asChild>
-                      <button
-                        className={clsx(
-                          'inline-flex min-w-[64px] select-none justify-center rounded-md px-4 py-2 text-sm font-medium',
-                          'bg-black text-white hover:bg-gray-800 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600',
-                          'border border-transparent',
-                          'focus:outline-none focus-visible:ring focus-visible:ring-neutral-500 focus-visible:ring-opacity-10',
-                        )}
-                        onClick={handleSave}
-                      >
-                        {translate('SAVE')}
-                      </button>
                     </DialogPrimitive.DialogClose>
                   </div>
-                  <label className="text-xs text-neutral-400">
-                    👉 {translate('SET_OPENAI_API_KEY')}
-                  </label>
-                </fieldset>
+                 </fieldset>
                 <fieldset className="flex flex-col items-start space-y-1">
                   <label
                     htmlFor="language"
